@@ -1,0 +1,48 @@
+# Jekyll configuration for GitHub Pages
+
+# Site settings
+title: ITB-100 Thermal Battery
+description: >-
+  Open-source 16.7 kWh phase-change thermal energy storage system
+  for building electrification. Affordable thermal storage using
+  sodium acetate trihydrate (SAT) PCM technology.
+
+# Theme
+theme: jekyll-theme-cayman
+# Alternative themes to try: jekyll-theme-minimal, jekyll-theme-slate
+
+# GitHub repository
+repository: SBSWP/itb-100-thermal-battery
+
+# Display
+show_downloads: true
+
+# Exclude files from GitHub Pages build
+exclude:
+  - models/
+  - output/
+  - .gitignore
+  - .python-version
+  - requirements.txt
+  - pyproject.toml
+  - claude.ini
+
+# Include docs in the site
+include:
+  - docs/
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-github-metadata
+  - jekyll-relative-links
+
+# Relative links configuration
+relative_links:
+  enabled: true
+  collections: true
